@@ -8,7 +8,7 @@ function Orders() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('https://storefleet-6.onrender.com//api/storefleet/order/',
+    fetch('https://storefleet-backend.onrender.com/api/storefleet/order/',
       {
         method:'GET',
         credentials: 'include'

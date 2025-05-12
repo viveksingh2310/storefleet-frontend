@@ -13,7 +13,7 @@ function UserDetails() {
   useEffect(() => {
     const fetchUserDetails = async () => {
       try {
-        const response = await fetch(`https://storefleet-6.onrender.com//api/storefleet/user/admin/details/${id}`, {
+        const response = await fetch(`https://storefleet-backend.onrender.com/api/storefleet/user/admin/details/${id}`, {
           method: 'GET',
           credentials: 'include',
           headers: { 'Content-Type': 'application/json' },
@@ -59,7 +59,7 @@ function UserDetails() {
     setSuccessMessage('');
 
     try {
-      const response = await fetch(`https://storefleet-6.onrender.com//api/storefleet/user/admin/update/${id}`, {
+      const response = await fetch(`https://storefleet-backend.onrender.com/api/storefleet/user/admin/update/${id}`, {
         method: 'PUT',
         credentials: 'include',
         headers: {

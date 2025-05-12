@@ -11,7 +11,7 @@ function UserProfile() {
   useEffect(() => {
     const fetchUserProfile = async () => {
       try {
-        const response = await fetch('https://storefleet-6.onrender.com//api/storefleet/user/profile', {
+        const response = await fetch('https://storefleet-backend.onrender.com/api/storefleet/user/profile', {
           method: 'GET',
           credentials: 'include',
           headers: {

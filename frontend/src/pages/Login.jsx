@@ -10,7 +10,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('https://storefleet-6.onrender.com//api/storefleet/user/login', {
+      const response = await fetch('https://storefleet-backend.onrender.com/api/storefleet/user/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

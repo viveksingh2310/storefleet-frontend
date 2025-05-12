@@ -13,7 +13,7 @@ function ProductDetails() {
 
   // Fetch product details
   useEffect(() => {
-    fetch(`https://storefleet-6.onrender.com//api/storefleet/product/details/${id}`)// here we are using the product id to fetch the details of the product  
+    fetch(`https://storefleet-backend.onrender.com/api/storefleet/product/details/${id}`)// here we are using the product id to fetch the details of the product  
       .then((res) => {
         if (!res.ok) throw new Error('Failed to fetch product details');
         return res.json();
@@ -35,7 +35,7 @@ function ProductDetails() {
 
     if (shouldShow && reviews.length === 0) {
       setReviewsLoading(true);
-      fetch(`https://storefleet-6.onrender.com//api/storefleet/product/reviews/${id}`)// here we are using the product id to fetch the reviews of the product
+      fetch(`https://storefleet-backend.onrender.com/api/storefleet/product/reviews/${id}`)// here we are using the product id to fetch the reviews of the product
         .then((res) => {
           if (!res.ok) throw new Error('Failed to fetch reviews');
           return res.json();

@@ -16,7 +16,7 @@ function Profile() {
   useEffect(() => {
     const fetchUserProfile = async () => {
       try {
-        const response = await fetch('https://storefleet-6.onrender.com//api/storefleet/user/profile', {
+        const response = await fetch('https://storefleet-backend.onrender.com/api/storefleet/user/profile', {
           method: 'GET',
           credentials: 'include',
           headers: {
@@ -57,7 +57,7 @@ function Profile() {
     setUpdateMessage(null);
 
     try {
-      const response = await fetch('https://storefleet-6.onrender.com//api/storefleet/user/profile/update', {
+      const response = await fetch('https://storefleet-backend.onrender.com/api/storefleet/user/profile/update', {
         method: 'PUT',
         credentials: 'include',
         headers: {
@@ -92,7 +92,7 @@ function Profile() {
     setUpdateMessage(null);
 
     try {
-      const response = await fetch('https://storefleet-6.onrender.com//api/storefleet/user/password/update', {
+      const response = await fetch('https://storefleet-backend.onrender.com/api/storefleet/user/password/update', {
         method: 'PUT',
         credentials: 'include',
         headers: {

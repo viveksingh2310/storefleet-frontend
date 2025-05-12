@@ -18,7 +18,7 @@ const Signup = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('https://storefleet-6.onrender.com//api/storefleet/user/signup', {
+      const response = await fetch('https://storefleet-backend.onrender.com/api/storefleet/user/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

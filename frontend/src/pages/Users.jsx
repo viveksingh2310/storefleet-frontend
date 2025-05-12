@@ -8,7 +8,7 @@ function Users() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("https://storefleet-6.onrender.com//api/storefleet/user/admin/allusers", {
+    fetch("https://storefleet-backend.onrender.com/api/storefleet/user/admin/allusers", {
       credentials: 'include',
     })
       .then((res) => {

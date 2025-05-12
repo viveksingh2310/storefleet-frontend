@@ -36,7 +36,7 @@ function Products() {
 
     setLoading(true);
 
-    fetch(`https://storefleet-6.onrender.com//api/storefleet/product/products?${query.toString()}`)
+    fetch(`https://storefleet-backend.onrender.com/api/storefleet/product/products?${query.toString()}`)
       .then((res) => {
         if (!res.ok) throw new Error('Failed to fetch products');
         return res.json();
