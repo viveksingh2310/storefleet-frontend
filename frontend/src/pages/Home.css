@@ -26,7 +26,7 @@
 
 /* Hero Section with Gradient Background */
 .hero-gradient {
-  background: linear-gradient(to right, #b8fffe, #8ee3ff); /* Light Blue to Light Sea Green */
+  background: linear-gradient(to right, #4dfffc, #9ccc00); /* Light Blue to Light Sea Green */
 }
 
 .hero-animate {
