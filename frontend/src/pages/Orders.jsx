@@ -11,7 +11,10 @@ function Orders() {
     fetch('https://storefleet-backend.onrender.com/api/storefleet/order/',
       {
         method:'GET',
-        credentials: 'include'
+        credentials: 'include', 
+        headers: {
+    "Content-Type": "application/json",
+  },
       }
     )
       .then((res) => {
